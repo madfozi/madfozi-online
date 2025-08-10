@@ -1,12 +1,15 @@
-const gridSize = 4;
-let grid = [];
+const canvas = document.getElementById("gameCanvas");
+const ctx = canvas.getContext("2d");
 let score = 0;
+const gridSize = 4;
+const tileSize = 80;
+let grid = [];
 
 function initGame() {
   grid = Array.from({ length: gridSize }, () => Array(gridSize).fill(0));
   addRandomTile();
   addRandomTile();
-  renderGrid();
+  drawGrid();
 }
 
 function addRandomTile() {
@@ -22,22 +25,26 @@ function addRandomTile() {
   }
 }
 
-function renderGrid() {
-  const container = document.getElementById("grid-container");
-  container.innerHTML = "";
-  grid.forEach(row => {
-    const rowDiv = document.createElement("div");
-    rowDiv.className = "grid-row";
-    row.forEach(val => {
-      const cell = document.createElement("div");
-      cell.className = "grid-cell";
-      if (val) cell.classList.add(`tile-${val}`);
-      cell.textContent = val || "";
-      rowDiv.appendChild(cell);
-    });
-    container.appendChild(rowDiv);
-  });
+function drawGrid() {
+  ctx.clearRect(0, 0, canvas.width, canvas.height);
+  for (let r = 0; r < gridSize; r++) {
+    for (let c = 0; c < gridSize; c++) {
+      drawTile(c * tileSize, r * tileSize, grid[r][c]);
+    }
+  }
   document.getElementById("score").textContent = score;
+}
+
+function drawTile(x, y, value) {
+  ctx.fillStyle = value ? "#eee4da" : "#cdc1b4";
+  ctx.fillRect(x + 5, y + 5, tileSize - 10, tileSize - 10);
+  if (value) {
+    ctx.fillStyle = "#776e65";
+    ctx.font = "bold 24px Arial";
+    ctx.textAlign = "center";
+    ctx.textBaseline = "middle";
+    ctx.fillText(value, x + tileSize / 2, y + tileSize / 2);
+  }
 }
 
 function slide(row) {
@@ -62,10 +69,7 @@ function moveLeft() {
     grid[r] = row;
     if (row.toString() !== original.toString()) moved = true;
   }
-  if (moved) {
-    addRandomTile();
-    renderGrid();
-  }
+  if (moved) { addRandomTile(); drawGrid(); }
 }
 
 function moveRight() {
@@ -76,10 +80,7 @@ function moveRight() {
     grid[r] = row;
     if (row.toString() !== original.toString()) moved = true;
   }
-  if (moved) {
-    addRandomTile();
-    renderGrid();
-  }
+  if (moved) { addRandomTile(); drawGrid(); }
 }
 
 function moveUp() {
@@ -92,10 +93,7 @@ function moveUp() {
     for (let r = 0; r < gridSize; r++) grid[r][c] = col[r];
     if (col.toString() !== original.toString()) moved = true;
   }
-  if (moved) {
-    addRandomTile();
-    renderGrid();
-  }
+  if (moved) { addRandomTile(); drawGrid(); }
 }
 
 function moveDown() {
@@ -108,18 +106,36 @@ function moveDown() {
     for (let r = 0; r < gridSize; r++) grid[r][c] = col[r];
     if (col.toString() !== original.toString()) moved = true;
   }
-  if (moved) {
-    addRandomTile();
-    renderGrid();
-  }
+  if (moved) { addRandomTile(); drawGrid(); }
 }
 
+// Keyboard controls
 document.addEventListener("keydown", e => {
   switch (e.key) {
     case "ArrowLeft": moveLeft(); break;
     case "ArrowRight": moveRight(); break;
     case "ArrowUp": moveUp(); break;
     case "ArrowDown": moveDown(); break;
+  }
+});
+
+// Touch controls
+let startX, startY;
+canvas.addEventListener("touchstart", e => {
+  const touch = e.touches[0];
+  startX = touch.clientX;
+  startY = touch.clientY;
+});
+canvas.addEventListener("touchend", e => {
+  const touch = e.changedTouches[0];
+  let dx = touch.clientX - startX;
+  let dy = touch.clientY - startY;
+  if (Math.abs(dx) > Math.abs(dy)) {
+    if (dx > 0) moveRight();
+    else moveLeft();
+  } else {
+    if (dy > 0) moveDown();
+    else moveUp();
   }
 });
 

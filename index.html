@@ -3,16 +3,50 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>MadFozi 2048</title>
+  <title>MadFozi - 2048 Game & CV</title>
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <h1>Welcome to MadFozi 2048</h1>
-  <p>Use your arrow keys (or swipe) to combine tiles and reach 2048!</p>
-  <div id="game-container">
-    <div id="grid-container"></div>
-  </div>
-  <div id="score-container">Score: <span id="score">0</span></div>
+  <header>
+    <h1>Muhamad Fauzi Ayub</h1>
+    <p>Kuala Lumpur, Malaysia | <a href="mailto:madfozi@gmail.com">madfozi@gmail.com</a> | <a href="https://www.linkedin.com/in/madfozi/" target="_blank">LinkedIn</a></p>
+  </header>
+
+  <section id="game-section">
+    <h2>🎮 Play 2048</h2>
+    <p>Use arrow keys or swipe to combine tiles and reach 2048!</p>
+    <canvas id="gameCanvas" width="320" height="320"></canvas>
+    <div id="score-container">Score: <span id="score">0</span></div>
+  </section>
+
+  <section id="cv-section">
+    <h2>💼 Professional Summary</h2>
+    <p>Fauzi is the Head of Digital Transformation (DX) Program at PETRONAS Gas Business, leading efforts for Remote Operations, Drone Operationalization and Visual Analytics. With 16 years of experience in the Oil & Gas industry across Upstream, LNG, and Gas, he has expertise in Information Management, Petroleum Arrangement & Commercial, Operational Excellence, and Transformation. He holds a Bachelor’s degree in Science (Computer Science) from Universiti Teknologi Malaysia and is a Professional Technolo...
+
+    <h2>🧑‍💼 Experience</h2>
+    <ul>
+      <li><strong>Head of Digital Transformation (DX) Program</strong>, PETRONAS Gas Business Digital, Kuala Lumpur (Jan 2022 – Present)</li>
+      <li><strong>Head of Venture Portfolio</strong>, PETRONAS Gas + New Energy Digital, Kuala Lumpur (Jul 2020 – Dec 2021)</li>
+      <li><strong>Digital Lead</strong>, PETRONAS Malaysia LNG Sdn Bhd, Bintulu (Aug 2017 – Jun 2020)</li>
+      <li><strong>Head of Business Process & Improvement</strong>, PETRONAS Malaysia LNG Sdn Bhd, Bintulu (Apr 2016 – Jun 2020)</li>
+      <li><strong>Head of Governance & Document Management</strong>, PETRONAS Carigali Sdn Bhd, Kuala Lumpur (Jan 2015 – Apr 2016)</li>
+      <li><strong>Senior Business Data Management</strong>, PETRONAS Upstream, Kuala Lumpur (Apr 2013 – Dec 2014)</li>
+    </ul>
+
+    <h2>🎓 Education</h2>
+    <ul>
+      <li>Bachelor of Science (Computer Science), Universiti Teknologi Malaysia (2002 – 2006)</li>
+      <li>Malacca Matriculation College – Science Physical (2001 – 2002)</li>
+    </ul>
+
+    <h2>🛠 Skills</h2>
+    <p>Liquefied Natural Gas (LNG), Business Transformation, Strategy, Petroleum Arrangement, Agile Methodologies, Project Management, Solution Architecture, Knowledge Management, Web Development</p>
+  </section>
+
+  <footer>
+    <p>© 2025 Muhamad Fauzi Ayub | <a href="https://www.linkedin.com/in/madfozi/" target="_blank">LinkedIn Profile</a></p>
+  </footer>
+
   <script src="game.js"></script>
 </body>
 </html>
