@@ -4,8 +4,7 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Muhamad Fauzi Ayub — Career Console</title>
-<!-- MadFozi Portfolio v2 -->  
-<meta name="description" content="Head of Digital Transformation, PETRONAS Gas Business. An interactive career console — quest log, skill tree, and a bonus level.">
+<meta name="description" content="Head of Digital Program, PETRONAS Floating LNG. An interactive career console — quest log, skill tree, and a bonus level.">
 <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🛰️</text></svg>">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -128,6 +127,7 @@
   h1.name{font-size:clamp(28px, 5vw, 44px); font-weight:800; color:var(--text); line-height:1.1;}
   .title-line{font-family:var(--mono); color:var(--amber); font-size:clamp(14px,2.2vw,17px); margin-top:10px;}
   .loc{color:var(--text-muted); font-size:14px; margin-top:6px;}
+  .briefing{color:var(--text-muted); font-size:14.5px; margin-top:18px; max-width:640px;}
 
   .stat-card{margin-top:26px;}
   .stat-top{display:flex; justify-content:space-between; align-items:baseline; flex-wrap:wrap; gap:10px; margin-bottom:14px;}
@@ -185,7 +185,7 @@
   .quest-xp{font-family:var(--mono); font-size:11px; color:var(--teal); margin-top:10px; display:block;}
 
   /* ---------- Skill tree ---------- */
-  .skill-grid{display:grid; grid-template-columns:repeat(auto-fill, minmax(150px,1fr)); gap:10px; margin-top:18px;}
+  .skill-grid{display:grid; grid-template-columns:repeat(auto-fill, minmax(170px,1fr)); gap:10px; margin-top:18px;}
   .skill-node{
     background:var(--panel); border:1px solid var(--border); border-radius:6px; padding:14px 12px;
     text-align:left; color:var(--text-muted); font-family:var(--mono); font-size:12.5px; cursor:pointer;
@@ -281,21 +281,22 @@
   <header class="hero">
     <div class="callsign">SESSION ESTABLISHED · KUALA LUMPUR NODE</div>
     <h1 class="name">MUHAMAD FAUZI AYUB</h1>
-    <div class="title-line">&gt; Head of Digital Transformation (DX) Program, PETRONAS Gas Business</div>
+    <div class="title-line">&gt; Head of Digital Program, PETRONAS Floating LNG (PFLNG)</div>
     <div class="loc">📍 Kuala Lumpur, Malaysia</div>
+    <p class="briefing">Digital transformation leader with 18+ years across LNG, Gas, and Upstream operations within PETRONAS. Track record in enterprise-scale digital programs, portfolio governance, operational excellence, digital product management, and business transformation — turning digital investment into measurable outcomes through practical execution and close collaboration with business, engineering, operations, and technology teams.</p>
 
     <div class="panel stat-card">
       <div class="stat-top">
-        <div class="level-badge">CLASS: DX ARCHITECT<b>LVL 16 — 16+ Years in Oil &amp; Gas Digital Transformation</b></div>
+        <div class="level-badge">CLASS: DX ARCHITECT<b>LVL 18 — 18+ Years in Oil &amp; Gas Digital Transformation</b></div>
       </div>
-      <div class="xp-bar-label"><span>CAREER XP</span><span>6 roles completed</span></div>
+      <div class="xp-bar-label"><span>CAREER XP</span><span>11 roles completed at PETRONAS</span></div>
       <div class="xp-track"><div class="xp-fill" id="xp-fill"></div></div>
 
       <div class="stats-grid" id="stats-grid">
-        <div class="stat-row"><div class="stat-name"><span>Transformation</span><span data-val="95">95</span></div><div class="stat-track"><div class="stat-fill" data-val="95"></div></div></div>
-        <div class="stat-row"><div class="stat-name"><span>Strategy</span><span data-val="90">90</span></div><div class="stat-track"><div class="stat-fill" data-val="90"></div></div></div>
-        <div class="stat-row"><div class="stat-name"><span>LNG Operations</span><span data-val="88">88</span></div><div class="stat-track"><div class="stat-fill" data-val="88"></div></div></div>
-        <div class="stat-row"><div class="stat-name"><span>Solution Architecture</span><span data-val="82">82</span></div><div class="stat-track"><div class="stat-fill" data-val="82"></div></div></div>
+        <div class="stat-row"><div class="stat-name"><span>Digital Strategy</span><span data-val="95">95</span></div><div class="stat-track"><div class="stat-fill" data-val="95"></div></div></div>
+        <div class="stat-row"><div class="stat-name"><span>Portfolio Governance</span><span data-val="92">92</span></div><div class="stat-track"><div class="stat-fill" data-val="92"></div></div></div>
+        <div class="stat-row"><div class="stat-name"><span>LNG Operations</span><span data-val="90">90</span></div><div class="stat-track"><div class="stat-fill" data-val="90"></div></div></div>
+        <div class="stat-row"><div class="stat-name"><span>AI &amp; Cyber Enablement</span><span data-val="80">80</span></div><div class="stat-track"><div class="stat-fill" data-val="80"></div></div></div>
       </div>
 
       <div class="cta-row">
@@ -308,21 +309,21 @@
   <section id="missions">
     <div class="sec-head">
       <h2 class="sec-title">🗂 Mission Log</h2>
-      <span class="progress-chip" id="quest-progress">0/6 explored</span>
+      <span class="progress-chip" id="quest-progress">0/11 explored</span>
     </div>
-    <p class="sec-sub">16 years, six quests. Tap any entry to expand the briefing.</p>
+    <p class="sec-sub">18+ years, eleven quests. Tap any entry to expand the briefing.</p>
 
     <details class="quest active" data-quest>
       <summary>
         <span class="quest-status active">ACTIVE</span>
         <div class="quest-main">
-          <div class="quest-title">Head of Digital Transformation (DX) Program</div>
-          <div class="quest-org">PETRONAS Gas Business Digital · Jan 2022 – Present</div>
+          <div class="quest-title">Head of Digital Program</div>
+          <div class="quest-org">PETRONAS Floating LNG (PFLNG) · Jan 2026 – Present</div>
         </div>
         <span class="quest-chevron">▸</span>
       </summary>
       <div class="quest-body">
-        Leading Remote Operations, Drone Operationalization, and Visual Analytics programs across PETRONAS Gas Business.
+        Driving the digital program across PFLNG assets — aligning digital initiatives with operational priorities, strengthening governance and asset reliability, and enabling AI, cybersecurity governance, and connectivity modernization for offshore and onshore facilities.
         <span class="quest-xp">◆ CURRENT QUEST — in progress</span>
       </div>
     </details>
@@ -331,13 +332,43 @@
       <summary>
         <span class="quest-status done">DONE</span>
         <div class="quest-main">
-          <div class="quest-title">Head of Venture Portfolio</div>
-          <div class="quest-org">PETRONAS Gas + New Energy Digital · Jul 2020 – Dec 2021</div>
+          <div class="quest-title">Head of Digital Program</div>
+          <div class="quest-org">LNG Assets · Jan 2024 – Dec 2025</div>
         </div>
         <span class="quest-chevron">▸</span>
       </summary>
       <div class="quest-body">
-        Scouted, backed, and managed a portfolio of digital and new-energy ventures inside the group.
+        Led the digital portfolio and transformation initiatives for PETRONAS LNG assets — managing investments, driving portfolio governance, and aligning cross-functional initiatives to long-term strategy.
+        <span class="quest-xp">◆ +2 YR XP</span>
+      </div>
+    </details>
+
+    <details class="quest" data-quest>
+      <summary>
+        <span class="quest-status done">DONE</span>
+        <div class="quest-main">
+          <div class="quest-title">Head of DX Program</div>
+          <div class="quest-org">Gas Business Digital · Jan 2022 – Dec 2023</div>
+        </div>
+        <span class="quest-chevron">▸</span>
+      </summary>
+      <div class="quest-body">
+        Orchestrated the Digital Transformation Program for Gas Business's LNG assets through Remote Operations and New Way of Working, and drove Drone Operational Excellence — lifting drones from a novelty into a concentrated use-case deployment.
+        <span class="quest-xp">◆ +2 YR XP</span>
+      </div>
+    </details>
+
+    <details class="quest" data-quest>
+      <summary>
+        <span class="quest-status done">DONE</span>
+        <div class="quest-main">
+          <div class="quest-title">Head of Venture Portfolio</div>
+          <div class="quest-org">Gas &amp; New Energy Digital · Jul 2020 – Dec 2021</div>
+        </div>
+        <span class="quest-chevron">▸</span>
+      </summary>
+      <div class="quest-body">
+        Managed strategic venture and innovation portfolios, supporting the identification, evaluation, and development of new opportunities for growth and transformation within Gas Business.
         <span class="quest-xp">◆ +1 YR 6 MO XP</span>
       </div>
     </details>
@@ -347,13 +378,13 @@
         <span class="quest-status done">DONE</span>
         <div class="quest-main">
           <div class="quest-title">Digital Lead</div>
-          <div class="quest-org">PETRONAS Malaysia LNG Sdn Bhd, Bintulu · Aug 2017 – Jun 2020</div>
+          <div class="quest-org">Malaysia LNG Sdn Bhd · Aug 2017 – Jun 2020</div>
         </div>
         <span class="quest-chevron">▸</span>
       </summary>
       <div class="quest-body">
-        Drove digital adoption across one of the world's major LNG operating sites.
-        <span class="quest-xp">◆ +2 YR 10 MO XP</span>
+        Spearheaded MLNG's digital agenda — improving data reliability toward a smart plant, integrating multiple work-streams into descriptive and cognitive analytics, and running design-thinking workshops to turn business pain points into digital solutions.
+        <span class="quest-xp">◆ +2 YR 11 MO XP</span>
       </div>
     </details>
 
@@ -362,13 +393,13 @@
         <span class="quest-status done">DONE</span>
         <div class="quest-main">
           <div class="quest-title">Head of Business Process &amp; Improvement</div>
-          <div class="quest-org">PETRONAS Malaysia LNG Sdn Bhd, Bintulu · Apr 2016 – Jun 2020</div>
+          <div class="quest-org">Malaysia LNG Sdn Bhd · Apr 2016 – Jun 2020</div>
         </div>
         <span class="quest-chevron">▸</span>
       </summary>
       <div class="quest-body">
-        Re-engineered operational processes for efficiency across LNG plant operations.
-        <span class="quest-xp">◆ +4 YR 2 MO XP</span>
+        Led Business Process Improvement by internalizing industry best practice, ran Plant Situational Assessments to identify performance gaps, and advised on methodologies and tools to lift plant business results.
+        <span class="quest-xp">◆ +4 YR 3 MO XP</span>
       </div>
     </details>
 
@@ -377,13 +408,13 @@
         <span class="quest-status done">DONE</span>
         <div class="quest-main">
           <div class="quest-title">Head of Governance &amp; Document Management</div>
-          <div class="quest-org">PETRONAS Carigali Sdn Bhd, Kuala Lumpur · Jan 2015 – Apr 2016</div>
+          <div class="quest-org">Kuala Lumpur · Jan 2015 – Apr 2016</div>
         </div>
         <span class="quest-chevron">▸</span>
       </summary>
       <div class="quest-body">
-        Built the governance backbone and document control systems for upstream operations.
-        <span class="quest-xp">◆ +1 YR 3 MO XP</span>
+        Led Joint Venture governance across petroleum contracts, managed commercial activities for international asset JVs, and ran document control to keep every portfolio's records centralized and retrievable.
+        <span class="quest-xp">◆ +1 YR 4 MO XP</span>
       </div>
     </details>
 
@@ -392,13 +423,58 @@
         <span class="quest-status done">DONE</span>
         <div class="quest-main">
           <div class="quest-title">Senior Business Data Management</div>
-          <div class="quest-org">PETRONAS Upstream, Kuala Lumpur · Apr 2013 – Dec 2014</div>
+          <div class="quest-org">Kuala Lumpur · Apr 2013 – Dec 2014</div>
         </div>
         <span class="quest-chevron">▸</span>
       </summary>
       <div class="quest-body">
-        Where the data journey began — managing business-critical information for Upstream.
-        <span class="quest-xp">◆ +1 YR 8 MO XP — ORIGIN QUEST</span>
+        Enforced business data management compliance against EP Business's enterprise information standards — mapping data flows and driving automation for a single source of truth.
+        <span class="quest-xp">◆ +1 YR 9 MO XP</span>
+      </div>
+    </details>
+
+    <details class="quest" data-quest>
+      <summary>
+        <span class="quest-status done">DONE</span>
+        <div class="quest-main">
+          <div class="quest-title">Enterprise Content Management (ECM) Solution Architect</div>
+          <div class="quest-org">Kuala Lumpur · Mar 2012 – Mar 2013</div>
+        </div>
+        <span class="quest-chevron">▸</span>
+      </summary>
+      <div class="quest-body">
+        Designed, coordinated, and deployed ECM for PETRONAS Carigali — solution architecture, taxonomy development, business process integration, and change management.
+        <span class="quest-xp">◆ +1 YR 1 MO XP</span>
+      </div>
+    </details>
+
+    <details class="quest" data-quest>
+      <summary>
+        <span class="quest-status done">DONE</span>
+        <div class="quest-main">
+          <div class="quest-title">Business &amp; Information Management</div>
+          <div class="quest-org">Kuala Lumpur · Jan 2012 – Nov 2012</div>
+        </div>
+        <span class="quest-chevron">▸</span>
+      </summary>
+      <div class="quest-body">
+        Established and strategized business and information system requirements group-wide for PETRONAS Carigali.
+        <span class="quest-xp">◆ +11 MO XP</span>
+      </div>
+    </details>
+
+    <details class="quest" data-quest>
+      <summary>
+        <span class="quest-status done">DONE</span>
+        <div class="quest-main">
+          <div class="quest-title">Solution Consultant — eLearning</div>
+          <div class="quest-org">Kuala Lumpur · May 2008 – Dec 2011</div>
+        </div>
+        <span class="quest-chevron">▸</span>
+      </summary>
+      <div class="quest-body">
+        Managed eLearning delivery and custom content development, maintained the learning management system and infrastructure, and built a web-based survey and engagement portal.
+        <span class="quest-xp">◆ +3 YR 8 MO XP — ORIGIN QUEST</span>
       </div>
     </details>
   </section>
@@ -406,7 +482,7 @@
   <section id="skills">
     <div class="sec-head">
       <h2 class="sec-title">🌳 Skill Tree</h2>
-      <span class="progress-chip" id="skill-progress">0/9 discovered</span>
+      <span class="progress-chip" id="skill-progress">0/11 discovered</span>
     </div>
     <p class="sec-sub">Tap a node to inspect it.</p>
     <div class="skill-grid" id="skill-grid"></div>
@@ -442,15 +518,15 @@
 
   <section id="trivia">
     <div class="sec-head"><h2 class="sec-title">🧠 DX Ops Trivia</h2></div>
-    <p class="sec-sub">A quick side-quest — five questions on digital transformation &amp; LNG basics.</p>
+    <p class="sec-sub">A quick side-quest — six questions on digital transformation &amp; LNG basics.</p>
     <div class="panel" id="quiz-box">
-      <div class="q-progress" id="q-progress">Question 1 of 5</div>
+      <div class="q-progress" id="q-progress">Question 1 of 6</div>
       <div class="q-text" id="q-text"></div>
       <div class="q-options" id="q-options"></div>
       <div class="q-fact" id="q-fact"></div>
       <div class="q-next"><button class="btn primary" id="q-next-btn" style="display:none;">NEXT →</button></div>
       <div id="quiz-result">
-        <div class="score" id="quiz-score">0/5</div>
+        <div class="score" id="quiz-score">0/6</div>
         <div class="sec-sub" id="quiz-msg"></div>
         <button class="btn ghost" id="quiz-retry" style="margin-top:14px;">↺ RETRY</button>
       </div>
@@ -497,7 +573,7 @@
   else {
     var lines = [
       {el:document.getElementById('boot-l1'), text:'INITIALIZING MADFOZI.SYS ...'},
-      {el:document.getElementById('boot-l2'), text:'LOADING 16 YEARS OF CAREER DATA ...'},
+      {el:document.getElementById('boot-l2'), text:'LOADING 18 YEARS OF CAREER DATA ...'},
       {el:document.getElementById('boot-l3'), text:'WELCOME BACK, OPERATOR.'}
     ];
     var li = 0;
@@ -541,7 +617,7 @@
   /* ---------- Hero bars ---------- */
   window.addEventListener('load', function(){
     setTimeout(function(){
-      document.getElementById('xp-fill').style.width = '88%';
+      document.getElementById('xp-fill').style.width = '92%';
       document.querySelectorAll('.stat-fill').forEach(function(el){
         el.style.width = el.dataset.val + '%';
       });
@@ -561,14 +637,16 @@
 
   /* ---------- Skill tree ---------- */
   var SKILLS = [
-    {name:'Liquefied Natural Gas (LNG)', blurb:'End-to-end LNG value chain expertise, from upstream gas to liquefaction and delivery.'},
-    {name:'Business Transformation', blurb:'Redesigning how organizations operate — process, people, and technology in sync.'},
-    {name:'Strategy', blurb:'Long-range planning that turns ambition into an executable roadmap.'},
-    {name:'Petroleum Arrangement', blurb:'Structuring commercial and contractual frameworks across the oil & gas value chain.'},
-    {name:'Agile Methodologies', blurb:'Iterative delivery — sprint, learn, adjust, ship again.'},
-    {name:'Project Management', blurb:'Turning scope, budget, and timeline into delivered outcomes.'},
+    {name:'Digital Strategy', blurb:'Turning digital ambition into a roadmap the business can actually execute.'},
+    {name:'Portfolio Governance', blurb:'Keeping many moving initiatives aligned, funded, and accountable.'},
+    {name:'Operational Excellence', blurb:'Squeezing more reliability and performance out of existing operations.'},
+    {name:'AI Enablement', blurb:'Bringing AI and data-driven decision-making into everyday operations.'},
+    {name:'Cybersecurity Governance', blurb:"Making sure digital modernization doesn't outpace digital defense."},
+    {name:'Connectivity Modernization', blurb:'Upgrading the networks that let offshore and onshore facilities talk to each other.'},
+    {name:'Business Transformation', blurb:'Redesigning how an organization works — process, people, and technology in sync.'},
+    {name:'Stakeholder Management', blurb:'Getting engineering, operations, and business to row in the same direction.'},
     {name:'Solution Architecture', blurb:'Designing systems that scale, integrate, and actually get adopted.'},
-    {name:'Knowledge Management', blurb:"Capturing what an organization knows so it doesn't walk out the door."},
+    {name:'LNG Operations', blurb:'End-to-end LNG expertise, from upstream gas to liquefaction and floating assets.'},
     {name:'Web Development', blurb:'Still writes a bit of code — this page is the proof.'}
   ];
   var skillGrid = document.getElementById('skill-grid');
@@ -596,14 +674,15 @@
   var QUIZ = [
     {q:"What does 'LNG' stand for?", opts:['Liquefied Natural Gas','Liquid Nitrogen Gas','Low Nitrogen Gasoline','Liquefied Nuclear Generator'], correct:0, fact:'LNG is natural gas cooled into a liquid so it can be shipped efficiently around the world.'},
     {q:"In a corporate context, 'DX' most commonly refers to:", opts:['Data Exchange','Digital Transformation','Direct Export','Design Experience'], correct:1, fact:'DX combines process redesign with technology adoption to change how an organization operates.'},
-    {q:'Which technology is commonly used today for remote inspection of hard-to-reach industrial assets like flare stacks or tanks?', opts:['Drones','Fax machines','Telegraph','Carrier pigeons'], correct:0, fact:'Drone-based inspection reduces the need for workers to physically climb elevated or hazardous structures.'},
+    {q:'What is a key advantage of Floating LNG (FLNG) facilities over traditional onshore plants?', opts:['They can be built right at offshore gas fields, skipping long pipelines','They run with no staff at all','They only operate in freshwater','They remove the need for LNG carriers'], correct:0, fact:'FLNG facilities liquefy gas at sea near the source, cutting the need for long subsea pipelines to shore.'},
     {q:'To become liquid, natural gas is cooled to roughly what temperature?', opts:['0°C','-50°C','-162°C','-300°C'], correct:2, fact:'Around -162°C, natural gas shrinks to about 1/600th of its gaseous volume — much easier to transport.'},
+    {q:'Which technology is commonly used today for remote inspection of hard-to-reach industrial assets like flare stacks or tanks?', opts:['Drones','Fax machines','Telegraph','Carrier pigeons'], correct:0, fact:'Drone-based inspection reduces the need for workers to physically climb elevated or hazardous structures.'},
     {q:"Agile delivery work is typically organized into short, repeated cycles called:", opts:['Marathons','Sprints','Quarters','Epochs'], correct:1, fact:'Sprints are usually 1–4 weeks long, ending with a working increment and a review.'}
   ];
   var qi = 0, score = 0;
   var qText = document.getElementById('q-text'), qOpts = document.getElementById('q-options'),
       qFact = document.getElementById('q-fact'), qNextBtn = document.getElementById('q-next-btn'),
-      qProgress = document.getElementById('q-progress'), quizBoxInner = null;
+      qProgress = document.getElementById('q-progress');
 
   function renderQuestion(){
     var item = QUIZ[qi];
@@ -648,7 +727,7 @@
     res.style.display = 'block';
     document.getElementById('quiz-score').textContent = score + '/' + QUIZ.length;
     var msg = score === QUIZ.length ? 'Perfect run. DX-certified.' :
-              score >= 3 ? 'Solid. You know your way around a control room.' :
+              score >= 4 ? 'Solid. You know your way around a control room.' :
               "Not bad — every operator starts somewhere.";
     document.getElementById('quiz-msg').textContent = msg;
     unlock('certified');
